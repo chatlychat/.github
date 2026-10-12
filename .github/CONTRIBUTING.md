@@ -15,7 +15,7 @@ So: open an issue, or open a PR and we will treat the diff as the proposal.
 ## What makes a report easy to act on
 
 - The **exact** request or call, including the package version (`npm ls
-  @chatlychat/sdk-node`) and the Node or browser version.
+@chatlychat/sdk-node`) and the Node or browser version.
 - What you expected and what happened. If the API answered, paste the body —
   every error carries a stable `error.code`, and that code is usually enough
   to find the cause.

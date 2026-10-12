@@ -9,14 +9,14 @@ body:
       options:
         - REST API (/v1/*)
         - Widget on my page
-        - "@chatlychat/sdk-js"
-        - "@chatlychat/sdk-node"
-        - "@chatlychat/widget-element or widget-react"
-        - "@chatlychat/react-native"
+        - '@chatlychat/sdk-js'
+        - '@chatlychat/sdk-node'
+        - '@chatlychat/widget-element or widget-react'
+        - '@chatlychat/react-native'
         - Python / Go / Ruby / PHP / Java / .NET / Rust SDK
         - Flutter / Swift / Kotlin SDK
-        - "@chatlychat/cli"
-        - "@chatlychat/mcp"
+        - '@chatlychat/cli'
+        - '@chatlychat/mcp'
         - External agent (push) or webhooks
         - Dashboard
         - Documentation
@@ -26,7 +26,7 @@ body:
     id: version
     attributes:
       label: Package version, if a package is involved
-      placeholder: "@chatlychat/sdk-node@0.2.1, or chatly 0.1.0 for a non-npm SDK"
+      placeholder: '@chatlychat/sdk-node@0.2.1, or chatly 0.1.0 for a non-npm SDK'
   - type: textarea
     id: expected
     attributes:
