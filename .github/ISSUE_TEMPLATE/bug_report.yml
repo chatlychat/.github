@@ -1,0 +1,44 @@
+name: Bug report
+description: Something behaves differently from how it is documented
+labels: [bug]
+body:
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Which surface?
+      options:
+        - REST API (/v1/*)
+        - Widget on my page
+        - "@chatlychat/sdk-js"
+        - "@chatlychat/sdk-node"
+        - "@chatlychat/widget-element or widget-react"
+        - "@chatlychat/react-native"
+        - External agent (push) or webhooks
+        - Self-hosting
+        - Documentation
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Package version, if a package is involved
+      placeholder: "@chatlychat/sdk-node@0.1.0"
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and where it says so
+      description: A link to the doc page or a quote from it helps a lot. If our docs are wrong, that is the bug.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened
+      description: Paste the response body if there was one — every error carries a stable `error.code`.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Smallest way to reproduce
+      description: A curl command is ideal. Redact keys — and if a key has appeared anywhere public, rotate it.

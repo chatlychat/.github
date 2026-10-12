@@ -1,0 +1,25 @@
+name: Documentation gap
+description: The docs left you guessing, or said something untrue
+labels: [documentation]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Which page
+      placeholder: https://chatlychat.com/docs/api-blocks
+    validations:
+      required: true
+  - type: textarea
+    id: gap
+    attributes:
+      label: What you could not find out
+      description: >
+        Field names we describe in prose without naming, a shape with no example, a
+        claim that disagrees with what the API actually does. All of these are bugs to us.
+    validations:
+      required: true
+  - type: textarea
+    id: guessed
+    attributes:
+      label: What you did instead
+      description: If you guessed, tell us what you guessed — it tells us what the page implied.
